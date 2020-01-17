@@ -1,0 +1,341 @@
+1레이어는 5 7 
+2 레이어는 5 
+34는 일
+
+100000번 ,steer weight 1반
+
+실험결과는 장애물회피능력 떨어짐.
+# xc = network_manager.conv_block(x, 3, 2, 32, padding_in='SAME')
+# xc = network_manager.conv_block(xc, 3, 1, 32, padding_in='SAME')
+# 
+# xc5 = network_manager.conv_block(x, 5, 2, 32, padding_in='SAME')
+# 
+# xc7 = network_manager.conv_block(x, 7, 2, 32, padding_in='SAME')
+# 
+# xc = tf.concat([xc, xc5, xc7], -1)
+# 
+# """conv2"""
+# xc5 = network_manager.conv_block(xc, 5, 2, 64, padding_in='SAME')
+# xc = network_manager.conv_block(xc, 3, 2, 64, padding_in='SAME')
+# xc = network_manager.conv_block(xc, 3, 1, 64, padding_in='SAME')
+# 
+# xc = tf.concat([xc, xc5], -1)
+# 
+# """conv3"""
+# xc = network_manager.conv_block(xc, 3, 2, 128, padding_in='SAME')
+# xc = network_manager.conv_block(xc, 3, 1, 128, padding_in='SAME')
+# 
+# """conv4"""
+# xc = network_manager.conv_block(xc, 3, 1, 256, padding_in='SAME')
+# xc = network_manager.conv_block(xc, 3, 1, 256, padding_in='SAME')
+
+Town 1 43/50, 1442
+
+INFO: START
+INFO: ======== !!!! ==========
+INFO:  Start Position 36 End Position 40 
+INFO: +++++ Target achieved in 10.200000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 39 End Position 35 
+INFO: +++++ Target achieved in 10.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 110 End Position 114 
+INFO: +++++ Target achieved in 9.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 7 End Position 3 
+INFO: +++++ Target achieved in 7.700000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 0 End Position 4 
+INFO: +++++ Target achieved in 8.600000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 68 End Position 50 
+INFO: +++++ Target achieved in 37.600000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 61 End Position 59 
+INFO: +++++ Target achieved in 6.400000 seconds! +++++
+INFO: ======== !!!! ==========
+	INFO:  Start Position 47 End Position 64 
+	INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========12
+INFO:  Start Position 147 End Position 90 
+INFO: +++++ Target achieved in 26.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 33 End Position 87 
+INFO: +++++ Target achieved in 15.200000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 26 End Position 19 
+INFO: +++++ Target achieved in 13.000000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 80 End Position 76 
+INFO: +++++ Target achieved in 23.000000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 45 End Position 49 
+INFO: +++++ Target achieved in 7.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 55 End Position 44 
+INFO: +++++ Target achieved in 26.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 29 End Position 107 
+INFO: +++++ Target achieved in 18.200000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 95 End Position 104 
+INFO: +++++ Target achieved in 50.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 84 End Position 34 
+INFO: +++++ Target achieved in 21.300000 seconds! +++++
+INFO: ======== !!!! ==========
+	INFO:  Start Position 53 End Position 67 
+	INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 22 End Position 17 
+INFO: +++++ Target achieved in 11.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 91 End Position 148 
+INFO: +++++ Target achieved in 26.500000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 20 End Position 107 
+INFO: +++++ Target achieved in 33.000000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 78 End Position 70 
+INFO: +++++ Target achieved in 37.100000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 95 End Position 102 
+INFO: +++++ Target achieved in 55.600000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 68 End Position 44 
+INFO: +++++ Target achieved in 52.300000 seconds! +++++
+INFO: ======== !!!! ==========
+	INFO:  Start Position 45 End Position 69 
+	INFO: +++++ Target achieved in 65.400000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 138 End Position 17 
+INFO: +++++ Target achieved in 19.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 47 End Position 16 
+INFO: +++++ Target achieved in 10.700000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 26 End Position 9 
+INFO: +++++ Target achieved in 12.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 42 End Position 49 
+INFO: +++++ Target achieved in 10.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 140 End Position 124 
+INFO: +++++ Target achieved in 11.000000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 85 End Position 98 
+INFO: +++++ Target achieved in 10.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 65 End Position 133 
+INFO: +++++ Target achieved in 78.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 137 End Position 51 
+INFO: +++++ Target achieved in 21.400000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 76 End Position 66 
+INFO: +++++ Target achieved in 13.400000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 46 End Position 39 
+INFO: +++++ Target achieved in 14.700000 seconds! +++++
+INFO: ======== !!!! ==========
+	INFO:  Start Position 40 End Position 60 
+	INFO: ----- Timeout! -----
+	INFO: ======== !!!! ==========
+	INFO:  Start Position 0 End Position 29 
+	INFO: +++++ Target achieved in 26.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 4 End Position 129 
+INFO: +++++ Target achieved in 32.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 121 End Position 140 
+INFO: +++++ Target achieved in 21.100000 seconds! +++++
+INFO: ======== !!!! ==========
+	INFO:  Start Position 2 End Position 129 
+	INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 78 End Position 44 
+INFO: +++++ Target achieved in 94.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 68 End Position 85 
+INFO: +++++ Target achieved in 93.100000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 41 End Position 102 
+INFO: +++++ Target achieved in 97.500000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 95 End Position 70 
+INFO: +++++ Target achieved in 89.600000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 68 End Position 129 
+INFO: +++++ Target achieved in 77.400000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 84 End Position 69 
+INFO: +++++ Target achieved in 101.700000 seconds! +++++
+INFO: ======== !!!! ==========
+	INFO:  Start Position 47 End Position 79 
+	INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 110 End Position 15 
+INFO: +++++ Target achieved in 71.400000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 130 End Position 17 
+INFO: +++++ Target achieved in 50.800000 seconds! +++++
+INFO: ======== !!!! ==========
+	INFO:  Start Position 0 End Position 17 
+	INFO: ----- Timeout! -----
+
+
+
+Town 2, , 0
+
+INFO: START
+INFO: ======== !!!! ==========
+INFO:  Start Position 38 End Position 34 
+INFO: +++++ Target achieved in 16.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 4 End Position 2 
+INFO: +++++ Target achieved in 3.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 12 End Position 10 
+INFO: +++++ Target achieved in 12.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 62 End Position 55 
+INFO: +++++ Target achieved in 11.500000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 43 End Position 47 
+INFO: +++++ Target achieved in 11.700000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 64 End Position 66 
+INFO: +++++ Target achieved in 7.200000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 78 End Position 76 
+INFO: +++++ Target achieved in 7.100000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 59 End Position 57 
+INFO: +++++ Target achieved in 5.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 61 End Position 18 
+INFO: +++++ Target achieved in 17.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 35 End Position 39 
+INFO: +++++ Target achieved in 4.400000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 12 End Position 8 
+INFO: +++++ Target achieved in 12.000000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 0 End Position 18 
+INFO: +++++ Target achieved in 14.500000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 75 End Position 68 
+INFO: +++++ Target achieved in 15.000000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 54 End Position 60 
+INFO: +++++ Target achieved in 11.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 45 End Position 49 
+INFO: +++++ Target achieved in 15.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 46 End Position 42 
+INFO: +++++ Target achieved in 10.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 53 End Position 46 
+INFO: +++++ Target achieved in 9.700000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 80 End Position 29 
+INFO: +++++ Target achieved in 16.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 65 End Position 63 
+INFO: +++++ Target achieved in 7.200000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 0 End Position 81 
+INFO: +++++ Target achieved in 19.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 54 End Position 63 
+INFO: +++++ Target achieved in 22.000000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 51 End Position 42 
+INFO: +++++ Target achieved in 22.700000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 16 End Position 19 
+INFO: +++++ Target achieved in 22.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 17 End Position 26 
+INFO: +++++ Target achieved in 25.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 77 End Position 68 
+INFO: +++++ Target achieved in 24.200000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 37 End Position 76 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 8 End Position 24 
+INFO: +++++ Target achieved in 11.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 60 End Position 69 
+INFO: +++++ Target achieved in 18.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 38 End Position 10 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 21 End Position 1 
+INFO: +++++ Target achieved in 10.900000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 58 End Position 71 
+INFO: +++++ Target achieved in 22.200000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 74 End Position 32 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 44 End Position 0 
+INFO: +++++ Target achieved in 11.500000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 71 End Position 16 
+INFO: +++++ Target achieved in 8.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 14 End Position 24 
+INFO: +++++ Target achieved in 17.000000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 34 End Position 11 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 43 End Position 14 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 75 End Position 16 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 80 End Position 21 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 3 End Position 23 
+INFO: +++++ Target achieved in 13.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 75 End Position 59 
+INFO: +++++ Target achieved in 32.000000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 50 End Position 47 
+INFO: +++++ Target achieved in 19.800000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 11 End Position 19 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 77 End Position 34 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 79 End Position 25 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 40 End Position 63 
+INFO: +++++ Target achieved in 35.600000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 58 End Position 76 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 79 End Position 55 
+INFO: +++++ Target achieved in 44.300000 seconds! +++++
+INFO: ======== !!!! ==========
+INFO:  Start Position 16 End Position 61 
+INFO: ----- Timeout! -----
+INFO: ======== !!!! ==========
+INFO:  Start Position 27 End Position 11 
+INFO: ----- Timeout! -----
+
