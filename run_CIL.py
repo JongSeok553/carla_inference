@@ -12,6 +12,7 @@ except ImportError:
     raise RuntimeError(
         'cannot import "carla_server_pb2.py", run the protobuf compiler to generate this file')
 
+
 if (__name__ == '__main__'):
     argparser = argparse.ArgumentParser(description=__doc__)
     argparser.add_argument(
@@ -22,7 +23,7 @@ if (__name__ == '__main__'):
     argparser.add_argument(
         '--host',
         metavar='H',
-        default='localhost',
+        default='127.0.0.1',
         help='IP of the host server (default: localhost)')
     argparser.add_argument(
         '-p', '--port',
@@ -33,7 +34,7 @@ if (__name__ == '__main__'):
     argparser.add_argument(
         '-c', '--city-name',
         metavar='C',
-        default='Town01',
+        default='Town02',
         help='The town that is going to be used on benchmark'
              + '(needs to match active town in server, options: Town01 or Town02)')
     argparser.add_argument(

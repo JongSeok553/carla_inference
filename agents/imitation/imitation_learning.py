@@ -21,7 +21,7 @@ class ImitationLearning(Agent):
         Agent.__init__(self)
 
         self.dropout_vec = [1.0] * 8 + [0.7] * 2 + [0.5] * 2 + [0.5] * 1 + [0.5, 1.] * 5
-
+        # self.dropout_vec = [1.0] * 19 + [0.7] * 2 + [0.5] * 2 + [0.5] * 1 + [0.5, 1.] * 5
         config_gpu = tf.ConfigProto()
 
         # GPU to be selected, just take zero , select GPU  with CUDA_VISIBLE_DEVICES
@@ -60,7 +60,6 @@ class ImitationLearning(Agent):
         dir_path = os.path.dirname(__file__)
 
         self._models_path = dir_path + '/model/'
-
         # tf.reset_default_graph()
         self._sess.run(tf.global_variables_initializer())
 
@@ -142,21 +141,28 @@ class ImitationLearning(Agent):
 
         speed = speed.reshape((1, 1))
 
-        if control_input == 2 or control_input == 0.0:
+        # if control_input == 2 or control_input == 0.0:
+        #     all_net = branches[0]
+        # elif control_input == 3:
+        #     all_net = branches[2]
+        # elif control_input == 4:
+        #     all_net = branches[3]
+        # else:
+        #     all_net = branches[1]
+        # (2 Follow lane, 3 Left, 4 Right, 5 Straight)
+        if control_input == 2 or control_input == 0.0: # Follow lane
             all_net = branches[0]
-        elif control_input == 3:
-            all_net = branches[2]
-        elif control_input == 4:
-            all_net = branches[3]
-        else:
+        elif control_input == 3:    # left
             all_net = branches[1]
+        elif control_input == 4:    # right
+            all_net = branches[2]
+        elif control_input == 5:
+            all_net = branches[3]   # Straight
 
         feedDict = {x: image_input, input_speed: speed, dout: [1] * len(self.dropout_vec)}
-
         output_all = sess.run(all_net, feed_dict=feedDict)
 
         predicted_steers = (output_all[0][0])
-
         predicted_acc = (output_all[0][1])
 
         predicted_brake = (output_all[0][2])
